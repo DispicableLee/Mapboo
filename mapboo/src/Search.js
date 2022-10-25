@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
 
-export default function Search() {
+export default function Search({setLat, setLng}) {
   const [placeName, setPlaceName] = useState("");
   const [city, setCity] = useState("");
   const [state, setState] = useState("");
@@ -49,8 +49,8 @@ export default function Search() {
       .then((response) => response.json())
       .then((json) => {
           console.log(json.results[0])
-          console.log(json.results[0].lat)
-          console.log(json.results[0].lon)
+          setLat(json.results[0].lat)
+
       }
       )
       .catch((error) => console.log("error", error));
