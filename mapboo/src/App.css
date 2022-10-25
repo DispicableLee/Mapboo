@@ -41,6 +41,8 @@ li:hover {
   padding: 5%;
   color: white;
   font-family: 'Raleway', sans-serif;
+  display: flex;
+  height: 100vh;
 }
 
 .map-container {
@@ -48,11 +50,7 @@ li:hover {
   width: 500px;
 }
 
-.form-container {
-  background-color: pink;
-  height: 400px;
-  list-style-type: none;
-}
+
 
 /* .footer {
   background-color: black;
@@ -63,20 +61,15 @@ li:hover {
 } */
 
 .addComment {
+  background-color: pink;
   display: flex;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
 }
 
-.inputStyle{
-    height: 30px;
-    width: 200px;
-    outline: none;
-    border-radius: 5px;
-    border: .5px solid #3d4637;
-    padding-left: 10px;
-    font-family: var(--main-font);
-    font-size: 12px;
+input[type=text] {
+  padding: 12px 20px;
+  margin-top: 10px;
+  margin-left: 20%;
+  box-sizing: border-box;
 }
 

@@ -4,52 +4,52 @@ import React from 'react';
 function Form () {
 
     return (
-        <form className='addComment'>
-            <label >
-            <input 
-            className='inputStyle'
-            type="text"
-            id="comment" 
-            placeholder='comment'/>
-            </label>
-            <label >
-            <input
-            className='inputStyle'
-            type="text"
-            id="city" 
-            placeholder='city'/>
-             </label>
-            <label >
-            <input 
-            className='inputStyle'
-            type="text"
-            id="state" 
-            placeholder='state'/>
-            </label>
-            
-            <label >
-            <input 
-            className='inputStyle'
-            type="text"
-            id="postal-code" 
-            placeholder='postal code'/>
-             </label>
-            <label >
-            <input 
-            className='inputStyle'
-            type="text"
-            id="address" 
-            placeholder='address'/>
-             </label>
-             <label >
-            <input 
-            className='inputStyle'
-            type="text"
-            id="country" 
-            placeholder='country'/>
-             </label>
-             <button type ="submit">Add Comment</button>
-        </form>
+        <div class="form">
+        <div class="title">Welcome</div>
+        <div class="subtitle">Let's create your account!</div>
+
+        <div class="input-container ic1">
+          <input id="place" class="input" type="text" placeholder=" " />
+          <div class="cut"></div>
+          <label for="place" class="placeholder">Place</label>
+        </div>
+
+        <div class="input-container ic2">
+          <input id="name" class="input" type="text" placeholder=" " />
+          <div class="cut"></div>
+          <label for="name" class="placeholder">Name</label>
+        </div>
+
+        <div class="input-container ic3">
+          <input id="city" class="input" type="text" placeholder=" " />
+          <div class="cut"></div>
+          <label for="city" class="placeholder">City</label>
+        </div>
+
+        <div class="input-container ic4">
+          <input id="state" class="input" type="text" placeholder=" " />
+          <div class="cut"></div>
+          <label for="state" class="placeholder">State</label>
+        </div>
+
+        <div class="input-container ic5">
+          <input id="zip-code" class="input" type="text" placeholder=" " />
+          <div class="cut"></div>
+          <label for="zip-code" class="placeholder">Zip Code</label>
+        </div>
+
+        <div class="input-container ic3">
+          <input id="country" class="input" type="text" placeholder=" " />
+          <div class="cut"></div>
+          <label for="country" class="placeholder">Country</label>
+        </div>
+
+        <div class="input-container ic2">
+          <input id="email" class="input" type="text" placeholder=" " />
+          <div class="cut cut-short"></div>
+        <button type="text" class="submit">submit</button>
+      </div>
+      </div>
     )
 }
 
