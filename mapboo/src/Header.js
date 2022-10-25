@@ -7,13 +7,13 @@ function Header(){
             <nav>
                 <ul>
                     <li>
-                        Home
+                    <span class="material-symbols-outlined">home</span>
                     </li>
                     <li>
-                        Map
+                    <span class="material-symbols-outlined">map</span>
                     </li>
                     <li>
-                        Form
+                    <span class="material-symbols-outlined">comment</span>
                     </li>
                 </ul>
             </nav>
