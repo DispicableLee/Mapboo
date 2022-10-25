@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
+
 //import Header from './Header';
-import Map from './Map';
+import Maps from './Maps';
 import Form from './Form';
-import Footer from './Footer';
+//import Footer from './Footer';
 import Home from "./Home";
 import {
   BrowserRouter as Router,
@@ -15,6 +16,7 @@ import {
 // routes will be home, map and form 
 
 function App() {
+
   
 
 
@@ -27,7 +29,7 @@ function App() {
               <Link to="/home"><span class="material-symbols-outlined">home</span></Link>
             </li>
             <li>
-              <Link to="/map"><span class="material-symbols-outlined">map</span></Link>
+              <Link to="/maps"><span class="material-symbols-outlined">map</span></Link>
             </li>
             <li>
               <Link to="/form"><span class="material-symbols-outlined">comment</span></Link>
@@ -40,8 +42,8 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/map">
-            <Map/>
+          <Route path="/maps">
+            <Maps/>
           </Route>
           <Route path="/form">
             <Form />
