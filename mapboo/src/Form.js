@@ -1,21 +1,55 @@
 import React from 'react';
 
+
 function Form () {
 
     return (
-        <div className="form-container">
-            <div className="card">
-                <div className="avatar">avatar</div>
-                <div className="timestamp">timestamp</div>
-                <p className="comment-card">commentcard</p>
-            </div>
-        <div className="location">
-            <input placeholder="Current Location"/>
-            </div>
-            <div className="comment">
-                <input placeholder="Comment"/>
-            </div>
-        </div>
+        <form className='addComment'>
+            <label >
+            <input 
+            className='inputStyle'
+            type="text"
+            id="comment" 
+            placeholder='comment'/>
+            </label>
+            <label >
+            <input
+            className='inputStyle'
+            type="text"
+            id="city" 
+            placeholder='city'/>
+             </label>
+            <label >
+            <input 
+            className='inputStyle'
+            type="text"
+            id="state" 
+            placeholder='state'/>
+            </label>
+            
+            <label >
+            <input 
+            className='inputStyle'
+            type="text"
+            id="postal-code" 
+            placeholder='postal code'/>
+             </label>
+            <label >
+            <input 
+            className='inputStyle'
+            type="text"
+            id="address" 
+            placeholder='address'/>
+             </label>
+             <label >
+            <input 
+            className='inputStyle'
+            type="text"
+            id="country" 
+            placeholder='country'/>
+             </label>
+             <button type ="submit">Add Comment</button>
+        </form>
     )
 }
 

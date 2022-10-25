@@ -1,7 +1,11 @@
-`import logo from './logo.svg';
+import logo from './logo.svg';
 import React, { useRef, useEffect, useState } from 'react';
 import './App.css';
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
+import Search from './Search';
+
+
+
  export default function Map(){
     useEffect(() => {
         if (map.current) return; // initialize map only once
@@ -33,9 +37,12 @@ import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-load
       const [zoom, setZoom] = useState(9);
     
     return (
-        <div>
+        <main className="main">
+        <div className="map-container">
             <div ref={mapContainer} className="map-container" />
+            <Search/>
         </div>
+        </main>
     )
 
  }
