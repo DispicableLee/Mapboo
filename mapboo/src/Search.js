@@ -47,7 +47,12 @@ export default function Search() {
       requestOptions
     )
       .then((response) => response.json())
-      .then((json) => console.log(json.results[0]))
+      .then((json) => {
+          console.log(json.results[0])
+          console.log(json.results[0].lat)
+          console.log(json.results[0].lon)
+      }
+      )
       .catch((error) => console.log("error", error));
   }
 

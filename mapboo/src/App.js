@@ -24,7 +24,6 @@ function App() {
 
   return (
     <div>
-      <Search/>
       <Map/>
 >>>>>>> ad94bbeda2b83ce852333718a9da0f46c32da0dc
     </div>
