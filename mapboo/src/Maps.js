@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+`import logo from './logo.svg';
 import React, { useRef, useEffect, useState } from 'react';
 import './App.css';
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax

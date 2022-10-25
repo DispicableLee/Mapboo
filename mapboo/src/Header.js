@@ -4,16 +4,20 @@ function Header(){
 
     return (
         <header>
-            <nav>
-                <ul>
+            <nav className="navigation">
+                <div className="logo">Aire</div>
+                <ul className="navlinks">
                     <li>
-                        Home
+                        <span class="material-symbols-outlined">person</span>Login
                     </li>
                     <li>
-                        Map
+                        <span class="material-symbols-outlined">home</span>Home
                     </li>
                     <li>
-                        Form
+                        <span class="material-symbols-outlined">map</span>Map
+                    </li>
+                    <li>
+                    <span class="material-symbols-outlined">comment</span>Comment
                     </li>
                 </ul>
             </nav>

@@ -38,9 +38,10 @@ function Map (){
       },[])
 
     return (
-        <main>
+        <main className="main">
           <h1>Air Quality Map</h1>
          <div ref={mapContainer} className="map-container" />
+         <div className="map-details">map details</div>
         </main>
     );
 }

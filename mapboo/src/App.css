@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+ul {
+  list-style-type: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li {
+  display: inline;
+  margin-right: 40px;
+  box-shadow: inset 0 0 0 0 white;
+  color: #FF7B89;
+  font-size: 14px;
+  padding: 0 .25rem;
+  transition: color .8s ease-in-out, box-shadow .8s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+li:hover {
+  box-shadow: inset 100px 0 0 0 #FF7B89;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 50px;
+  color: #FF7B89;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navlinks {
+  text-align: right;
+}
+
+.navigation {
+  background-color: white;
+  color: #FF7B89;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+}
+
+.main {
+  background-color: #A5CAD2;
+  padding: 5%;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.map-container {
+  text-align: center;
+  width: 70%;
+  height: 400px;
+}
+
+
+.form-container {
+  background-color: teal;
+  height: 400px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  height: 50px;
+}
+
+.form-container {
+  background-color: pink;
+
+
+}
+
+.card {
+  margin: 5px;
+  background-color: yellow;
+  height: 250px;
+  width: 25%;
+  padding: 2px;
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.avatar {
+background-color: gray;
+margin-top: 5px;
+height: 60px;
+width: 60px;
+border-radius: 50%
+
+}
+
+.timestamp {
+  margin-top: 5px;
+  background-color: teal;
+
+}
+
+.comment-card {
+
+}
+
+.location {
+
+}
+
+.comment {
+
 }
