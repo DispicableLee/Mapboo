@@ -39,10 +39,7 @@ import Search from './Search';
     return (
         <div>
             <div ref={mapContainer} className="map-container" />
-            <Search 
-                setLat={setLat}
-                setLng={setLng}
-            />
+            <Search/>
         </div>
     )
 
