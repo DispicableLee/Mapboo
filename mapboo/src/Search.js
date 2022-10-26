@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
 
-export default function Search({ setLat, setLng }) {
+export default function Search({setRenderWeather}) {
   const [lati, setLati] = useState(0);
   const [longi, setLongi] = useState(0);
   const [placeName, setPlaceName] = useState("");
@@ -18,7 +18,6 @@ export default function Search({ setLat, setLng }) {
     for (let i = 1; i <= testPlace.length - 1; i++) {
       place = place + "%20" + testPlace[i];
     }
-    console.log(place);
     //==========  sort by city =================
     let testCity = city.split(" ");
     let cityName = "";
@@ -27,7 +26,6 @@ export default function Search({ setLat, setLng }) {
     }
     //========== sort by state ================
     let testState = state.split(" ");
-    console.log(testState);
     let stateName = "";
     for (let i = 1; i < testState.length; i++) {
       stateName = testState[0] + "%20" + testState[i];
@@ -35,7 +33,6 @@ export default function Search({ setLat, setLng }) {
     console.log(stateName);
     //============= sort by country =============
     let testCountry = country.split(" ");
-    console.log(testCountry);
     let countryName = "";
     for (let i = 0; i < testCountry.length; i++) {
       countryName = countryName + "%20" + testCountry[i];
@@ -67,13 +64,9 @@ const options = {
 
 fetch(`https://air-quality.p.rapidapi.com/forecast/airquality?lat=${lati}&lon=${longi}&hours=3`, options)
 	.then(response => response.json())
-	.then(response => console.log(response))
+	.then(json => setRenderWeather(json.data))
 	.catch(err => console.error(err));
   }
-
-  //https://api.geoapify.com/v1/geocode/search?name=200%20east%2094th%20street%20&postcode=10128&city=New%20York&state=New%20York&country=United%20States%20of%20America&format=json&apiKey=YOUR_API_KEY
-  const testUrl =
-    "https://api.geoapify.com/v1/geocode/search?text={place}%2C%20{postCode}%2C%20{cityname}%2C%20{stateName}%2C%20{countryName}&format=json&apiKey=f67baa6095514751976876bc73fb1f06";
 
   return (
     <div className="form-container">
