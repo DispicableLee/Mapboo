@@ -51,13 +51,22 @@ li:hover {
   font-family: 'Raleway', sans-serif;
   display: flex;
   height: 100vh;
+  display: flex;
 }
 
 .map-container {
-  height: 400px;
-  width: 800px;
+  height: 500px;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
+.search-title{
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  margin-left: 3%;
+  margin-bottom: 2px;
+}
 
 
 /* .footer {
@@ -68,10 +77,29 @@ li:hover {
   height: 50px;
 } */
 
-.addComment {
+/* .addComment {
   background-color: pink;
   display: flex;
     height: 100vh;
+} */
+
+.form-container{
+  font-family: 'Raleway', sans-serif;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  margin-top: -30px
+}
+
+.search {
+  font-family: 'Raleway', sans-serif;
+  border:0;
+  background-color: #FF7B89;
+  padding: .5rem;
+  color: white;
+  margin: 1rem 0;
+  width: auto;
+  cursor: pointer;
 }
 
 .form{

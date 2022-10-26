@@ -24,7 +24,7 @@ function App() {
         <ul className="navlinks">
             <li className="link">
               <Link to="/home"><span class="material-symbols-outlined">home</span>Home</Link>
-            </li>
+            `</li>
             <li className="link">
               <Link to="/maps"><span class="material-symbols-outlined">map</span>Map</Link>
             </li>

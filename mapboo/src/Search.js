@@ -63,26 +63,26 @@ export default function Search({setLat, setLng}) {
 
   return (
     <div className="form-container">
-      <h2>Please input a location in New York City</h2>
+      <h2 className="search-title">Please input a location in New York City</h2>
       <form onSubmit={searchLocation}>
         <input
           type="text"
-          placeholder="place name"
+          placeholder="Street"
           onChange={(e) => setPlaceName(e.target.value)}
         />
         <input
           type="text"
-          placeholder="city"
+          placeholder="City"
           onChange={(e) => setCity(e.target.value)}
         />
         <input
           type="text"
-          placeholder="state"
+          placeholder="State"
           onChange={(e) => setState(e.target.value)}
         />
         <input
           type="number"
-          placeholder="Postal Code"
+          placeholder="Zip Code"
           onChange={(e) => setPostCode(e.target.value)}
         />
         <input
@@ -90,7 +90,7 @@ export default function Search({setLat, setLng}) {
           placeholder="Country"
           onChange={(e) => setCountry(e.target.value)}
         />
-        <input type="submit" />
+        <input className="search" type="submit" />
       </form>
     </div>
   );
