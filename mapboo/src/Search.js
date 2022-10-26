@@ -51,7 +51,6 @@ export default function Search({setLat, setLng}) {
           console.log(json.results[0])
           setLat(json.results[0].lat)
           
-
       }
       )
       .catch((error) => console.log("error", error));
