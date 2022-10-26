@@ -83,6 +83,18 @@ li:hover {
     height: 100vh;
 } */
 
+.card-container{
+  display: flex;
+  height: 500px;
+  background-color: teal;
+
+}
+
+.card{
+  height: 100px;
+  background-color: white;
+}
+
 .form-container{
   font-family: 'Raleway', sans-serif;
   max-width: 500px;

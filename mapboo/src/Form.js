@@ -6,7 +6,7 @@ function Form () {
 
     return (
         <>
-        <div class="form">
+        <div className="form">
 
         <label for="Name">Name</label>
         <input type="text" className="name"/>
