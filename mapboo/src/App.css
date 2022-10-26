@@ -11,7 +11,7 @@ li {
 }
 
 li:hover {
-  box-shadow: inset 100px 0 0 0 #FF7B89;
+  box-shadow: inset 200px 0 0 0 #FF7B89;
   color: white;
 }
 
@@ -86,13 +86,35 @@ li:hover {
 .card-container{
   display: flex;
   height: 500px;
-  background-color: teal;
-
+  background-color: #A5CAD2;
 }
 
 .card{
-  height: 100px;
+  font-family:'Raleway', sans-serif;
+  margin-top: 50px;
+  height: 300px;
+  width: 200px;
   background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.avatar{
+  background-color: light gray;
+  margin-top: 10px;
+  margin-left: 95px;
+  margin-right: 5px;
+  border-radius: 70%;
+  height: 50%;
+  border: 3px solid pink;
+  padding: 20px;
+}
+
+.location{
+  color: #FF7B89;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: -20px;
 }
 
 .form-container{

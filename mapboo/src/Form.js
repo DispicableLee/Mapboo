@@ -29,7 +29,6 @@ function Form () {
 
         <label for="state">State</label>
         <input type="text" className="state"/>
-``
 
         <label for="country">Country</label>
         <input type="text" className="country"/>
