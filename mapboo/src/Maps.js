@@ -39,8 +39,8 @@ import Search from './Search';
     return (
         <main className="main">
         <div className="map-container">
-            <div ref={mapContainer} className="map-container" />
             <Search/>
+            <div ref={mapContainer} className="map-container" />
         </div>
         </main>
     )

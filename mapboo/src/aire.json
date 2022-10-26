@@ -1,0 +1,40 @@
+{
+    "comments": [
+    {
+      "id": "1",
+      "name": "Teana",
+      "street": "410 Atkinson Drive",
+      "city": "Honolulu",
+      "state": "Hawaii",
+      "zip": "96814",
+      "country": "United States",
+    },
+    {
+      "id": "2",
+      "name": "Rob",
+      "street": "6901 Hollywood Blvd",
+      "city": "Los Angeles" ,
+      "state": "California",
+      "zip": "90028",
+      "country": "United States",
+    },
+    {
+      "id": "3",
+      "name": "Colleen",
+      "street": "1000 5th Ave",
+      "city": "New York",
+      "state": "New York",
+      "zip": "10028" ,
+      "country": "United States",
+    },
+    {
+      "id": "4",
+      "name": "Chris",
+      "street": "449 N Santa Claus Lane",
+      "city": "North Pole",
+      "state": "Alaska",
+      "zip": "99705" ,
+      "country": "United States",
+    }
+  ]
+}
