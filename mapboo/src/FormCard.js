@@ -1,6 +1,6 @@
 import React from 'react';
 
-function FormCard({ id, name, street, city, state, zip, country, comment}){
+function FormCard({ id, name, city, state, country, comment}){
     return (
         <li className="card">
         <div className="details">
