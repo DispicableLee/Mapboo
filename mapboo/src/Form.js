@@ -5,51 +5,28 @@ function Form () {
 
     return (
         <div class="form">
-        <div class="title">Welcome</div>
-        <div class="subtitle">Let's create your account!</div>
 
-        <div class="input-container ic1">
-          <input id="place" class="input" type="text" placeholder=" " />
-          <div class="cut"></div>
-          <label for="place" class="placeholder">Place</label>
+        <label for="place">Place</label>
+        <input type="text" className="place"/>
+
+        <label for="name">Name</label>
+        <input type="text" className="name"/>
+
+        <label for="city">City</label>
+        <input type="text" className="city"/>
+
+        <label for="state">State</label>
+        <input type="text" className="state"/>
+
+        <label for="zip-code">Zip Code</label>
+        <input type="text" className="zip-code"/>
+
+        <label for="country">Country</label>
+        <input type="text" className="country"/>
+
+        <input type="submit" className="submit-button" value="Send"/>
+
         </div>
-
-        <div class="input-container ic2">
-          <input id="name" class="input" type="text" placeholder=" " />
-          <div class="cut"></div>
-          <label for="name" class="placeholder">Name</label>
-        </div>
-
-        <div class="input-container ic3">
-          <input id="city" class="input" type="text" placeholder=" " />
-          <div class="cut"></div>
-          <label for="city" class="placeholder">City</label>
-        </div>
-
-        <div class="input-container ic4">
-          <input id="state" class="input" type="text" placeholder=" " />
-          <div class="cut"></div>
-          <label for="state" class="placeholder">State</label>
-        </div>
-
-        <div class="input-container ic5">
-          <input id="zip-code" class="input" type="text" placeholder=" " />
-          <div class="cut"></div>
-          <label for="zip-code" class="placeholder">Zip Code</label>
-        </div>
-
-        <div class="input-container ic3">
-          <input id="country" class="input" type="text" placeholder=" " />
-          <div class="cut"></div>
-          <label for="country" class="placeholder">Country</label>
-        </div>
-
-        <div class="input-container ic2">
-          <input id="email" class="input" type="text" placeholder=" " />
-          <div class="cut cut-short"></div>
-        <button type="text" class="submit">submit</button>
-      </div>
-      </div>
     )
 }
 

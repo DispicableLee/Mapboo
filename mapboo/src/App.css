@@ -29,6 +29,14 @@ li:hover {
   padding-right: 5%;
 }
 
+.link {
+  color: #FF7B89
+}
+
+.material-symbols-outlined{
+  color: #FF7B89
+}
+
 .navigation {
   background-color: white;
   color: #FF7B89;
@@ -47,7 +55,7 @@ li:hover {
 
 .map-container {
   height: 400px;
-  width: 500px;
+  width: 800px;
 }
 
 
@@ -66,10 +74,34 @@ li:hover {
     height: 100vh;
 }
 
-input[type=text] {
-  padding: 12px 20px;
-  margin-top: 10px;
-  margin-left: 20%;
-  box-sizing: border-box;
+.form{
+  font-family: 'Raleway', sans-serif;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+label {
+  display: block;
+  padding: 1rem 0 .5rem;
+}
+
+input, textarea{
+  display: block;
+  width: 100%;
+  border: 1px solid  #FF7B89;
+  padding: .25rem;
+  border-radius: 5px;
+}
+
+.submit-button{
+  font-family: 'Raleway', sans-serif;
+  border:0;
+  background-color: #FF7B89;
+  padding: .5rem;
+  color: white;
+  margin: 1rem 0;
+  width: auto;
+  cursor: pointer;
 }
 

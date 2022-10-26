@@ -22,13 +22,13 @@ function App() {
       <nav className="navigation">
       <div className="logo">Aire</div>
         <ul className="navlinks">
-            <li>
+            <li className="link">
               <Link to="/home"><span class="material-symbols-outlined">home</span>Home</Link>
             </li>
-            <li>
+            <li className="link">
               <Link to="/maps"><span class="material-symbols-outlined">map</span>Map</Link>
             </li>
-            <li>
+            <li className="link">
               <Link to="/form"><span class="material-symbols-outlined">comment</span>Comment</Link>
             </li>
           </ul>
