@@ -144,4 +144,7 @@ input, textarea{
   width: auto;
   cursor: pointer;
 }
-
+/* home componenet */
+#homeBG {
+  width: 100%;
+}
