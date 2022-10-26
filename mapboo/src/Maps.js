@@ -3,6 +3,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import './App.css';
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 import Search from './Search';
+import WeatherCard from './WeatherCard';
 
 
 
@@ -18,16 +19,6 @@ import Search from './Search';
       });
     
       
-      useEffect(() => {
-        if (!map.current) return; // wait for map to initialize
-        map.current.on('move', () => {
-          console.log(lng)
-          setLng(map.current.getCenter().lng.toFixed(4));
-          console.log(lat)
-          setLat(map.current.getCenter().lat.toFixed(4));
-          setZoom(map.current.getZoom().toFixed(2));
-        });
-      });
       mapboxgl.accessToken = 'pk.eyJ1IjoiY21jYWJlZG8iLCJhIjoiY2w5bXdxNGRsMDBiejNwbjBwaWl6OWd5ZiJ9.3ff0gljHhvINuNdRckybOg';
     
       const mapContainer = useRef(null);
@@ -35,12 +26,31 @@ import Search from './Search';
       const [lng, setLng] = useState(-73.9963);
       const [lat, setLat] = useState(40.7283);
       const [zoom, setZoom] = useState(9);
-    
+    //================ weatherInfo states ===================================
+    const [renderWeather, setRenderWeather] = useState([])
+    console.log(renderWeather)
+    // const renderedWeather = renderWeather.map((w)=>{
+    //     <WeatherCard
+    //         aqi={w.aqi}
+    //         co={w.co}
+    //         datetime={w.datetime}
+    //         no2={w.no2}
+    //         o3={w.o3}
+    //         pm10={w.pm10}
+    //         pm25={w.pm25}
+    //         so2={w.so2}
+    //         timestamp_local={w.timestamp_local}
+    //         timestamp_utc={w.timestamp_utc}
+    //         ts={w.ts}
+        
+    //     />
+    // })
     return (
         <main className="main">
         <div className="map-container">
-            <Search/>
+            <Search setRenderWeather={setRenderWeather}/>
             <div ref={mapContainer} className="map-container" />
+            {/* {renderedWeather} */}
         </div>
         </main>
     )
