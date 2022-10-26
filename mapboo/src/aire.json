@@ -7,7 +7,7 @@
       "city": "Honolulu",
       "state": "Hawaii",
       "zip": "96814",
-      "country": "United States",
+      "country": "United States"
     },
     {
       "id": "2",
@@ -16,7 +16,7 @@
       "city": "Los Angeles" ,
       "state": "California",
       "zip": "90028",
-      "country": "United States",
+      "country": "United States"
     },
     {
       "id": "3",
@@ -25,7 +25,7 @@
       "city": "New York",
       "state": "New York",
       "zip": "10028" ,
-      "country": "United States",
+      "country": "United States"
     },
     {
       "id": "4",
@@ -34,7 +34,7 @@
       "city": "North Pole",
       "state": "Alaska",
       "zip": "99705" ,
-      "country": "United States",
+      "country": "United States"
     }
   ]
 }
