@@ -64,8 +64,7 @@ const options = {
 
 fetch(`https://air-quality.p.rapidapi.com/forecast/airquality?lat=${lati}&lon=${longi}&hours=3`, options)
 	.then(response => response.json())
-  .then(json=>console.log(json.data))
-	// .then(json => setRenderWeather(json.data))
+	.then(json => setRenderWeather(json.data))
 	.catch(err => console.error(err));
   }
 
