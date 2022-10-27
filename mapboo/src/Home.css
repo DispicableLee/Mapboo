@@ -1,0 +1,44 @@
+    .container{
+    background-color: transparent;
+    background-image: url("./homebg-removebg-preview.png");
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+  }
+  
+  .pointer{
+    top: 8%;
+    left: 0%;
+    width: 0; 
+    height: 0; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 140px solid blue;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+    transform-origin: center bottom;
+    transform: rotate(-125deg);
+  }
+  
+  .animate {
+      -webkit-transition-duration: 1.5s;
+      -webkit-transition-property: 0 opacity;
+      -webkit-transition-timing-function: ease;
+      -moz-transition-duration: 1.5s;
+      -o-transition-duration: 1.5s;
+      transition-duration: 1.5s;
+      -moz-transition-property: 0 opacity;
+      -o-transition-property: 0 opacity;
+      transition-property: 0 opacity;
+      -moz-transition-timing-function: ease;
+      -o-transition-timing-function: ease;
+      transition-timing-function: ease;
+  }
+  
+  .gauge:hover .pointerAnimation{
+    transform: rotate(75deg);
+    border-bottom-color: darkred;  
+  }
+  

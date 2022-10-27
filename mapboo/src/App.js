@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
-import './App.css';
-//import Header from './Header';
+import React from 'react';
+import AppCss from './App.css';
 import Maps from './Maps';
 import Form from './Form';
-//import Footer from './Footer';
 import Home from "./Home";
 import {
   BrowserRouter as Router,
@@ -23,13 +21,13 @@ function App() {
       <div className="logo">Aire</div>
         <ul className="navlinks">
             <li className="link">
-              <Link to="/home"><span class="material-symbols-outlined">home</span>Home</Link>
-            `</li>
-            <li className="link">
-              <Link to="/maps"><span class="material-symbols-outlined">map</span>Map</Link>
+              <Link className="link-nav" to="/home"><span className="material-symbols-outlined">home</span><text className="navlink-text">Home</text></Link>
             </li>
             <li className="link">
-              <Link to="/form"><span class="material-symbols-outlined">comment</span>Comment</Link>
+              <Link className="link-nav" to="/maps"><span className="material-symbols-outlined">map</span><text className="navlink-text">Map</text></Link>
+            </li>
+            <li className="link">
+              <Link className="link-nav" to="/form"><span className="material-symbols-outlined">comment</span><text className="navlink-text">Comment</text></Link>
             </li>
           </ul>
         </nav>
