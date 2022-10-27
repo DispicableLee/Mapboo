@@ -30,6 +30,7 @@ import WeatherCard from './WeatherCard';
     const [renderWeather, setRenderWeather] = useState([])
     console.log(renderWeather)
     // const renderedWeather = renderWeather.map((w)=>{
+    //   return (
     //     <WeatherCard
     //         aqi={w.aqi}
     //         co={w.co}
@@ -44,13 +45,15 @@ import WeatherCard from './WeatherCard';
     //         ts={w.ts}
         
     //     />
+
+    //   )
     // })
     return (
         <main className="main">
         <div className="map-container">
             <Search setRenderWeather={setRenderWeather}/>
             <div ref={mapContainer} className="map-container" />
-            {/* {renderedWeather} */}
+            <WeatherCard/>
         </div>
         </main>
     )
