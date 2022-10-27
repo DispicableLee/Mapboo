@@ -187,13 +187,18 @@ input, textarea{
 }
 
 .weatherCard {
-  /* background-color: black; */
-
-  font-size: 10px;
+  background-color: white;
+  color: #FF7B89;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 14px;
   font-family: 'Raleway', sans-serif;
-  max-width: 500px;
-  margin: 2rem auto;
+  max-width: 300px;
+  margin: 1`rem auto;
   padding: 2rem;
-  margin-top: -30px
+  border-radius: 20px;
+}
 
+.details{
+  text-align: center;
 }
