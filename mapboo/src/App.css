@@ -66,7 +66,8 @@ li:hover {
   color: white;
   font-family: 'Raleway', sans-serif;
   display: flex;
-  height: 100vh;
+  max-width: auto;
+  height: 1300px;
 }
 
 .map-container {
@@ -183,4 +184,16 @@ input, textarea{
 /* home componenet */
 #homeBG {
   width: 100%;
+}
+
+.weatherCard {
+  /* background-color: black; */
+
+  font-size: 10px;
+  font-family: 'Raleway', sans-serif;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  margin-top: -30px
+
 }

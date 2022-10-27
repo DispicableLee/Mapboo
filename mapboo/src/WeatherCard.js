@@ -2,7 +2,7 @@ import React from "react";
 
 export default function WeatherCard() {
   return (
-    <div>
+    <div className="weatherCard">
       <h1>Hi</h1>
       <h1>aqi</h1>
       <h1>co</h1>
