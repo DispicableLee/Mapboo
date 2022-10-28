@@ -57,7 +57,7 @@ export default function Search({setRenderWeather}) {
 const options = {
 	method: 'GET',
 	headers: {
-		// 'X-RapidAPI-Key': '74d54fc20fmsh1d7ea97ac1a9979p162e29jsn5774d0a455b7',
+		'X-RapidAPI-Key': '74d54fc20fmsh1d7ea97ac1a9979p162e29jsn5774d0a455b7',
 		'X-RapidAPI-Host': 'air-quality.p.rapidapi.com'
 	}
 };
