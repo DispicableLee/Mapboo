@@ -31,6 +31,7 @@ import WeatherCard from './WeatherCard';
     console.log(renderWeather)
     const renderedWeather = renderWeather.map((w)=>{
       return (
+        <li className="weatherDetails">
         <WeatherCard
             aqi={w.aqi}
             co={w.co}
@@ -42,10 +43,8 @@ import WeatherCard from './WeatherCard';
             so2={w.so2}
             timestamp_local={w.timestamp_local}
             timestamp_utc={w.timestamp_utc}
-            ts={w.ts}
-        
-        />
-
+            ts={w.ts} />
+        </li>
       )
     })
     return (

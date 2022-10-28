@@ -39,6 +39,22 @@
       "zip": "99705",
       "country": "United States",
       "comment": "too much pollution cannot see the northern lights and its a warm winter. polar bears are dying :("
+    },
+    {
+      "name": "Taylan",
+      "city": "Princeton",
+      "state": "New Jersey",
+      "country": "United States",
+      "comment": "Smoked too much house burnt down..... or am I just high????? Anyways, back to Ruby.",
+      "id": "p4PN2kE"
+    },
+    {
+      "name": "いけ",
+      "city": "うきょく",
+      "state": "きょと",
+      "country": "日本",
+      "comment": "私は日本が大好きですが、中国からスモッグが来ています。ヨットを航行できません。",
+      "id": "iuCzlGx"
     }
   ]
 }

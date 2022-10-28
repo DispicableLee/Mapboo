@@ -3,7 +3,7 @@ import React from "react";
 export default function WeatherCard(props) {
   return (
     <div className="weatherCard">
-      <h1 className="details"><u>Details</u></h1>
+      <h1 className="details">Details</h1>
       <h3>AQI: {props.aqi}</h3>
       <h3>Co: {props.co}</h3>
       <h3>Date & Time: {props.datetime}</h3>
@@ -15,6 +15,6 @@ export default function WeatherCard(props) {
       <h3>Timestamp Local: {props.timestamp_local}</h3>
       <h3>Timestamp Utc: {props.timestamp_utc}</h3>
       <h3>TS: {props.ts}</h3>
-    </div>
+    </div>    
   );
 }
